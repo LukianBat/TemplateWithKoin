@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 
 fun Any.log(text: String) {
-    Log.i(this::class.simpleName, text)
+    Log.i("TAG", text)
 }
 
 fun Activity.snack(text: String) {

@@ -1,6 +1,5 @@
-package com.lukianbat.template.feature.auth
+package com.lukianbat.template.feature.auth.presentation
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,18 +11,13 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class AuthFragment : Fragment() {
 
-    val authViewModel: AuthViewModel by viewModel()
+    private val authViewModel: AuthViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        authViewModel
         return inflater.inflate(R.layout.auth_fragment, container, false)
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
-    }
-
 }

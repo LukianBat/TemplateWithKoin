@@ -9,5 +9,14 @@
         android:id="@+id/splashFragment"
         android:name="com.lukianbat.template.feature.splash.presentation.SplashFragment"
         android:label="splash_fragment"
-        tools:layout="@layout/splash_fragment" />
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.lukianbat.template.feature.auth.presentation.AuthFragment"
+        android:label="auth_fragment"
+        tools:layout="@layout/auth_fragment" />
 </navigation>

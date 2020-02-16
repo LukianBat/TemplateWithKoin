@@ -10,6 +10,7 @@ buildscript {
         dagger2_version = '2.22.1'
         retrofit2_version = '2.5.0'
         okhttp3_version = '3.12.1'
+        navigationVersion = '2.2.1'
     }
     repositories {
         google()
@@ -18,6 +19,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0"
     }
 }
 
